@@ -1,0 +1,56 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    padding-top: 0px;
+}
+
+
+
+.topmenu nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    margin: 0px;
+    width: 100%;
+    background-color: silver;}
+
+    .topmenu h1 {
+        color: grey;
+        margin-left: 10px;
+        padding-top: 12.5px;
+    }    
+    .topmenu .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        width: 33%;
+        
+        } 
+    .topmenu .menu li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px 7px;
+    }
+    .topmenu .menu li a {
+        text-decoration: none;
+        color: grey;
+        padding: 5px 7px;
+    }
+    
+    .menu li:hover {
+        border-radius: 20px;
+        background-color: antiquewhite;
+        color:grey;
+    }
+
+canvas {
+    display: block;
+    }    
+
+   
