@@ -5,7 +5,11 @@
     padding-top: 0px;
 }
 
+.creation{
+  display: flex;
+  flex-direction: column;
 
+}
 
 .topmenu nav{
     position: fixed;
@@ -49,8 +53,3 @@
         color:grey;
     }
 
-canvas {
-    display: block;
-    }    
-
-   
