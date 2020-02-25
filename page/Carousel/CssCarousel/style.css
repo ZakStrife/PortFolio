@@ -1,0 +1,128 @@
+h1
+{
+  font-family: 'Permanent Marker', cursive;
+  color: ghostwhite;
+  text-align: center;
+}
+
+#carre1
+{
+  background: blue;
+  transform: rotateY(0deg) translateZ(105px);
+}
+
+#carre2
+{
+  background: white;
+  transform: rotateY(40deg) translateZ(105px);
+}
+
+#carre3
+{
+  background: red;
+  transform: rotateY(80deg) translateZ(105px);
+}
+
+#carre4
+{
+  background: rgb(255, 0, 234);
+  transform: rotateY(120deg) translateZ(105px); 
+}
+
+#carre5
+{
+  background: white;
+  transform: rotateY(160deg) translateZ(105px);
+}
+
+#carre6
+{
+  background: red;
+  transform: rotateY(200deg) translateZ(105px); 
+}
+
+#carre7
+{
+  background: blue;
+  transform: rotateY(240deg) translateZ(105px); 
+}
+
+#carre8
+{
+  background: white;
+  transform: rotateY(280deg) translateZ(105px);
+}
+
+#carre9
+{
+  background: red;
+  transform:  rotateY(320deg) translateZ(105px); 
+}
+
+#boite 
+{
+  margin: auto;
+  width: 600px;
+  height: 500px;
+  perspective: 900px;
+  background: black;
+}
+  
+#carousel 
+{
+  position: absolute;
+  transform-style: preserve-3d;
+  top: 100px;
+  left: 110px;
+  animation: turn 4s infinite linear;
+}
+  
+#carousel div
+{
+	height: 20px;
+	width: 20px;
+	padding: 20px;
+  position: absolute;
+  border: 20px outset;
+}
+
+@keyframes turn
+{
+	0%
+	{
+    transform: rotateX(0deg) rotateY(0deg);
+    top: 150px;
+    left: 250px;
+    }
+
+    25%
+	{
+    
+    top: 110px;
+    left: 400px;
+    }
+
+
+    50%
+	{
+   
+    top: 350px;
+    left: 400px;
+    }
+
+    75%
+	{
+    
+    top: 350px;
+    left: 130px;
+    }
+
+    
+	100%
+	{
+    transform: rotateX(360deg) rotateY(720deg);
+    top: 150px;
+    left: 250px;
+	}
+}
+
