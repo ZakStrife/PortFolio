@@ -7,6 +7,16 @@ html {
 }
 
 
+/*__                                    
+/_ |                                   
+ | | ___ _ __   _ __   __ _  __ _  ___ 
+ | |/ _ \ '__| | '_ \ / _` |/ _` |/ _ \
+ | |  __/ |    | |_) | (_| | (_| |  __/
+ |_|\___|_|    | .__/ \__,_|\__, |\___|
+							 | |           __/ |     
+							 |_|          |___/      
+
+*/
 .topmenu nav{
   position: fixed;
   display: flex;
@@ -177,8 +187,6 @@ height: 273px;
 left: 50%;
 top: 50%;
 margin: -137px 0 0 -141px;
-background: transparent url(http://web-sonick.zz.mu/images/sl/globe.png)
-  no-repeat top left;
 -webkit-animation: fadeInBack 3.6s linear 14s backwards;
 -moz-animation: fadeInBack 3.6s linear 14s backwards;
 -ms-animation: fadeInBack 3.6s linear 14s backwards;
@@ -238,7 +246,7 @@ a.sp-circle-link:hover {
 	box-shadow: rgba(30, 22, 54, 0.7) 0 100px 0px 2px inset;
 }
 
-/**/
+/* WEBKIT */
 
 @-webkit-keyframes blurFadeInOut {
 0% {
@@ -299,7 +307,7 @@ a.sp-circle-link:hover {
   -webkit-transform: scale(1) rotate(0deg);
 }
 }
-/**/
+/* MOZ */
 
 @-moz-keyframes blurFadeInOut {
 0% {
@@ -355,7 +363,7 @@ a.sp-circle-link:hover {
   -moz-transform: scale(1) rotate(0deg);
 }
 }
-/**/
+/* KeyFrames */
 
 @keyframes blurFadeInOut {
 0% {
@@ -416,7 +424,17 @@ a.sp-circle-link:hover {
   transform: scale(1) rotate(0deg);
 }
 }
-/*************************************************************/
+
+/*
+													_______      __
+													/ ____\ \    / /
+ _ __   __ _  __ _  ___  | |     \ \  / / 
+| '_ \ / _` |/ _` |/ _ \ | |      \ \/ /  
+| |_) | (_| | (_| |  __/ | |____   \  /   
+| .__/ \__,_|\__, |\___|  \_____|   \/    
+| |           __/ |                       
+|_|          |___/                        
+*/
 
 
 @import url(http://weloveiconfonts.com/api/?family=entypo|fontawesome);
@@ -551,6 +569,7 @@ blockquote, p , a, li {
 	font-weight: 300;
 	font-size: 15px;
 	color: #fbf7f7;
+	text-align: justify;
 }
 
 a:focus { 
@@ -571,7 +590,7 @@ ul {
   width: 960px;
   position: absolute;
 	top: 105%;
-	margin-left: 10px;
+	margin-left: 500px;
 }
 	#header {
 		height: 130px;
@@ -711,7 +730,8 @@ ul {
 }
 	
 .content {
-		text-align: center;		
+		text-align: center;	
+		text-justify: auto;	
 		color: #04080b;
 		width: 100%;
 		height: 47px;
@@ -769,7 +789,16 @@ ul {
 	}
 
 
-/************* GRID ****************/
+/*************
+   _____ _____  _____ _____  
+  / ____|  __ \|_   _|  __ \ 
+ | |  __| |__) | | | | |  | |
+ | | |_ |  _  /  | | | |  | |
+ | |__| | | \ \ _| |_| |__| |
+  \_____|_|  \_\_____|_____/ 
+                             
+                              
+****************/
 
 
 #item1{
@@ -824,14 +853,6 @@ ul {
 	font-size: medium;
 }
 
-/* #item2 li:hover{
-	
-	background-color: gray;
-	font-size: large;
-	color: black;
-	border: 1px black solid;
-} */
-
 
 #Anim a:before, #Anim a:after
 {
@@ -841,7 +862,8 @@ ul {
 		top: 9px;
 		bottom: 5px;
     content: '';
-    background: rgb(255, 255, 255);
+    background-image: url(../img/hatsune5.gif);
+		background-size: cover;
     opacity: 0.3;
     transition: all 0.3s;
 }
@@ -863,6 +885,155 @@ ul {
 
 
 
+#Grid a:before, #Grid a:after
+{
+    position: absolute;
+    width: 2px;
+    height: 17%;
+		top: 148px;
+		bottom: 50px;
+    content: '';
+    background-image: url(../img/hatsune4.gif);
+		background-size: cover;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+#Grid a:before
+{
+    left: 0px;
+} 
+
+#Grid a:after
+{
+    right: 0px;
+}
+
+#Grid a:hover:before, #Grid a:hover:after
+{
+    width: 100%;
+}
+
+#Resp a:before, #Resp a:after
+{
+    position: absolute;
+    width: 2px;
+    height: 17%;
+		top: 285px;
+		bottom: 5px;
+    content: '';
+    background-image: url(../img/hatsune3.gif);
+		background-size: cover;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+#Resp a:before
+{
+    left: 0px;
+} 
+
+#Resp a:after
+{
+    right: 0px;
+}
+
+#Resp a:hover:before, #Resp a:hover:after
+{
+    width: 100%;
+}
+
+
+#Flex a:before, #Flex a:after
+{
+    position: absolute;
+    width: 2px;
+    height: 17%;
+		top: 424px;
+		bottom: 5px;
+    content: '';
+    background-image: url(../img/hatsune2.gif);
+		background-size: cover;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+#Flex a:before
+{
+    left: 0px;
+} 
+
+#Flex a:after
+{
+    right: 0px;
+}
+
+#Flex a:hover:before, #Flex a:hover:after
+{
+    width: 100%;
+}
+
+
+
+#Grille a:before, #Grille a:after
+{
+    position: absolute;
+    width: 2px;
+    height: 17%;
+		top: 561px;
+		bottom: 5px;
+    content: '';
+		background-image: url(../img/hatsune.gif);
+		background-size: cover;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+#Grille a:before
+{
+    left: 0px;
+} 
+
+#Grille a:after
+{
+    right: 0px;
+}
+
+#Grille a:hover:before, #Grille a:hover:after
+{
+    width: 100%;
+}
+
+
+#item3 p{
+	font-size: x-large;
+	
+
+}
+
+
+#item5 {
+	background-image: url(../img/hatsune.png);
+	background-size: cover;
+}
+
+
+
+/******* RESPONSIVE du GRID pour iphone 6/7/8 *******/
+
+
+
+
+@media screen and (max-width:375px) {
+	#grid-container{
+		grid-template-areas: 
+  'header header header header header'
+	'menu menu menu menu menu'
+	'main main main main right'
+	'footer footer footer footer footer';
+	background-color: honeydew;
+	}
+}
 
 
 
