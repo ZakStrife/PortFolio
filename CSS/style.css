@@ -1005,16 +1005,32 @@ ul {
 }
 
 
+#item2{
+	width: 300px;
+}
+
+
+
+
 #item3 p{
+	text-align: justify;
 	font-size: x-large;
+	text-align: center;
+	width: 800px;
 	
 
 }
 
+#item4 p{
+	font-size: smaller;
+	text-align: justify;
+	width: 100%;
+}
+
 
 #item5 {
-	background-image: url(../img/hatsune.png);
-	background-size: cover;
+	display: flex;
+	flex-direction: column-reverse;
 }
 
 
@@ -1022,7 +1038,7 @@ ul {
 /******* RESPONSIVE du GRID pour iphone 6/7/8 *******/
 
 
-
+/***** c'est pas ouf j'avoue mais je l'ai commencé trop tard, il aurais fallu que je fasse toute la page en responsive pour avoir un truc propre :/    *****/
 
 @media screen and (max-width:375px) {
 	#grid-container{
@@ -1032,7 +1048,30 @@ ul {
 	'main main main main right'
 	'footer footer footer footer footer';
 	background-color: honeydew;
+	width: 350px;
+	margin-left: 5px;
+	position: relative;
+	top: 700px;
 	}
+	#main_container {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		position: relative;
+		top: 700px;
+		width: 300px;
+	}
+	#header_menu_container{
+		display: flex;
+		flex-direction: column;
+	}
+	#item3 p{
+		width: 125px;
+	}
+	#item4 p{
+		width: 125px;
+	}
+
 }
 
 
